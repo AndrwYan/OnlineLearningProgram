@@ -3,11 +3,12 @@ package com.andrew;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
-public class OnlinelearnApplication {
+class EurekaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OnlinelearnApplication.class, args);
+        SpringApplication.run(EurekaApplication.class, args);
     }
 
 }
