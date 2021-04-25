@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>system</artifactId>
-
+    <!--先在父pom.xml中添加依赖，再在子pom.xml中增加jar包依赖，子pom.xml中不再带版本号-->
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -19,6 +19,15 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--集成mybatis-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
 
