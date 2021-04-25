@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>system</artifactId>
+
     <!--先在父pom.xml中添加依赖，再在子pom.xml中增加jar包依赖，子pom.xml中不再带版本号-->
     <dependencies>
         <dependency>
@@ -29,12 +30,24 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+
         <!--devtools热部署-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
-    </dependencies>
 
+        <!--在system中引入server公共模块-->
+        <dependency>
+            <groupId>com.andrew</groupId>
+            <artifactId>server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.andrew</groupId>
+            <artifactId>server</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 </project>
