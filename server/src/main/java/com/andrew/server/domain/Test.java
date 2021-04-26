@@ -1,14 +1,9 @@
 package com.andrew.server.domain;
 
-
 public class Test {
     private String id;
-    private String username;
 
-    public Test(String id, String username) {
-        this.id = id;
-        this.username = username;
-    }
+    private String name;
 
     public String getId() {
         return id;
@@ -18,19 +13,23 @@ public class Test {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
     public String toString() {
-        return "Test{" +
-                "id='" + id + '\'' +
-                ", username='" + username + '\'' +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", id=").append(id);
+        sb.append(", name=").append(name);
+        sb.append("]");
+        return sb.toString();
     }
 }
