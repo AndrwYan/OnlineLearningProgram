@@ -24,7 +24,7 @@
                         connectionURL="jdbc:mysql://localhost:3306/onlinelearn"
                         userId="root"
                         password="root">
-        </jdbcConnection>"
+        </jdbcConnection>
 
         <!-- domain类的位置 -->
         <javaModelGenerator targetProject="src\main\java"
@@ -39,23 +39,21 @@
                              targetPackage="com.andrew.server.mapper"
                              type="XMLMAPPER" />
 
-
-<!--        <table tableName="test" domainObjectName="Test"/>-->
-<!--        <table tableName="chapter" domainObjectName="Chapter"/>-->
-<!--        <table tableName="section" domainObjectName="Section"/>-->
-<!--        <table tableName="course" domainObjectName="Course"/>-->
-<!--        <table tableName="course_content" domainObjectName="CourseContent"/>-->
-<!--        <table tableName="course_content_file" domainObjectName="CourseContentFile"/>-->
-<!--        <table tableName="teacher" domainObjectName="Teacher"/>-->
-<!--        <table tableName="file" domainObjectName="File"/>-->
-<!--        <table tableName="user" domainObjectName="User"/>-->
-<!--        <table tableName="resource" domainObjectName="Resource"/>-->
-<!--        <table tableName="role" domainObjectName="Role"/>-->
-<!--        <table tableName="role_resource" domainObjectName="RoleResource"/>-->
-<!--        <table tableName="role_user" domainObjectName="RoleUser"/>-->
-<!--        <table tableName="member" domainObjectName="Member"/>-->
-<!--        <table tableName="sms" domainObjectName="Sms"/>-->
-
-        <table tableName="test" domainObjectName="Test"/>
+        <!--        <table tableName="test" domainObjectName="Test"/>-->
+        <!--        <table tableName="chapter" domainObjectName="Chapter"/>-->
+        <!--        <table tableName="section" domainObjectName="Section"/>-->
+        <!--        <table tableName="course" domainObjectName="Course"/>-->
+        <!--        <table tableName="course_content" domainObjectName="CourseContent"/>-->
+        <!--        <table tableName="course_content_file" domainObjectName="CourseContentFile"/>-->
+        <!--        <table tableName="teacher" domainObjectName="Teacher"/>-->
+        <!--        <table tableName="file" domainObjectName="File"/>-->
+        <!--        <table tableName="user" domainObjectName="User"/>-->
+        <!--        <table tableName="resource" domainObjectName="Resource"/>-->
+        <!--        <table tableName="role" domainObjectName="Role"/>-->
+        <!--        <table tableName="role_resource" domainObjectName="RoleResource"/>-->
+        <!--        <table tableName="role_user" domainObjectName="RoleUser"/>-->
+        <!--        <table tableName="member" domainObjectName="Member"/>-->
+        <!--        <table tableName="sms" domainObjectName="Sms"/>-->
+        <table tableName="section" domainObjectName="Section"/>
     </context>
 </generatorConfiguration>
