@@ -1,4 +1,4 @@
-package com.andrew.business.controller.admin;
+package com.andrew.${module}.controller.admin;
 
 import com.andrew.server.dto.${Domain}Dto;
 import com.andrew.server.dto.${Domain}PageDto;
@@ -14,9 +14,8 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/admin/${domain}")
 public class ${Domain}Controller {
-
     private static final Logger LOG = LoggerFactory.getLogger(${Domain}Controller.class);
-    public static final String BUSINESS_NAME = "大章";
+    public static final String BUSINESS_NAME = "${tableNameCn}";
 
     @Resource
     private ${Domain}Service ${domain}Service;
