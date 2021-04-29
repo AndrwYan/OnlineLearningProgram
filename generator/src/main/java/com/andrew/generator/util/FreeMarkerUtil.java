@@ -27,7 +27,7 @@ public class FreeMarkerUtil {
         Configuration cfg = new Configuration(Configuration.VERSION_2_3_29);
         cfg.setDirectoryForTemplateLoading(new File(ftlPath));
         cfg.setObjectWrapper(new DefaultObjectWrapper(Configuration.VERSION_2_3_29));
-        temp = cfg.getTemplate("test.ftl");
+        temp = cfg.getTemplate(ftlName);
         /*
         *  会用代码生成器生成controller,service,dto,vue的代码，这些代码的路径都不一样，toPath是变化的，所以把toPath变成入参
         *

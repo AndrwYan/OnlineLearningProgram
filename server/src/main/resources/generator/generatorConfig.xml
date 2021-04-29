@@ -40,7 +40,7 @@
                              type="XMLMAPPER" />
 
         <!--        <table tableName="test" domainObjectName="Test"/>-->
-        <!--        <table tableName="chapter" domainObjectName="${Domain}"/>-->
+        <!--        <table tableName="${domain}" domainObjectName="${Domain}"/>-->
         <!--        <table tableName="section" domainObjectName="Section"/>-->
         <!--        <table tableName="andrew" domainObjectName="andrew"/>-->
         <!--        <table tableName="andrew_content" domainObjectName="andrewContent"/>-->
