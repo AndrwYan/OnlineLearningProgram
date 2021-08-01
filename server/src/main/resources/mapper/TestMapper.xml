@@ -160,6 +160,5 @@
     update test
     set `name` = #{name,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
-
   </update>
 </mapper>

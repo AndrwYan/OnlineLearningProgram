@@ -1,6 +1,5 @@
 package com.andrew.server.domain;
 
-
 public class Test {
     private String id;
 

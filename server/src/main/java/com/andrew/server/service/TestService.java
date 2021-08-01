@@ -12,10 +12,11 @@ import java.util.List;
 public class TestService {
     @Resource
     private TestMapper testMapper;
-
     public List<Test> list(){
         TestExample testExample = new TestExample();
-        testExample.createCriteria().andIdEqualTo("1");
+        //这里演示如何使用TestExample
+        //TestExample就相当于where,可以用orderby
+        //testExample.createCriteria().andIdEqualTo("1");
         testExample.setOrderByClause("id desc");
         return testMapper.selectByExample(testExample);
     }

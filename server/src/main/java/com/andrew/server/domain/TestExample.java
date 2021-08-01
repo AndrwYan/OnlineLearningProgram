@@ -1,13 +1,8 @@
 package com.andrew.server.domain;
+
 import java.util.ArrayList;
 import java.util.List;
 
-
-/*
-*
-* 通过Example,可以帮我们写入where , order by,distinct，需要熟练掌握，可以极大提高单表的开发效率*
-*
-* */
 public class TestExample {
     protected String orderByClause;
 

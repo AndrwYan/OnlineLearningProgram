@@ -1,15 +1,15 @@
-package com.andrew.server.dto;
+package com.andrew.server.domain;
 
 import java.util.Date;
 
-public class SectionDto {
+public class Section {
     private String id;
 
     private String title;
 
-    private String andrewId;
+    private String courseId;
 
-    private String ${domain}Id;
+    private String chapterId;
 
     private String video;
 
@@ -40,19 +40,19 @@ public class SectionDto {
     }
 
     public String getCourseId() {
-        return andrewId;
+        return courseId;
     }
 
-    public void setCourseId(String andrewId) {
-        this.andrewId = andrewId;
+    public void setCourseId(String courseId) {
+        this.courseId = courseId;
     }
 
-    public String get${Domain}Id() {
-        return ${domain}Id;
+    public String getChapterId() {
+        return chapterId;
     }
 
-    public void set${Domain}Id(String ${domain}Id) {
-        this.${domain}Id = ${domain}Id;
+    public void setChapterId(String chapterId) {
+        this.chapterId = chapterId;
     }
 
     public String getVideo() {
@@ -111,8 +111,8 @@ public class SectionDto {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", title=").append(title);
-        sb.append(", andrewId=").append(andrewId);
-        sb.append(", ${domain}Id=").append(${domain}Id);
+        sb.append(", courseId=").append(courseId);
+        sb.append(", chapterId=").append(chapterId);
         sb.append(", video=").append(video);
         sb.append(", time=").append(time);
         sb.append(", charge=").append(charge);
