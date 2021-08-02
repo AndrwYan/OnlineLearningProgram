@@ -8,6 +8,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 
+
 @Service
 public class TestService {
     @Resource
@@ -15,7 +16,7 @@ public class TestService {
     public List<Test> list(){
         TestExample testExample = new TestExample();
         //这里演示如何使用TestExample
-        //TestExample就相当于where,可以用orderby
+        //TestExample就相当于where的条件,可以用orderby
         //testExample.createCriteria().andIdEqualTo("1");
         testExample.setOrderByClause("id desc");
         return testMapper.selectByExample(testExample);
